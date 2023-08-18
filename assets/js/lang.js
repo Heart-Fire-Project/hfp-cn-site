@@ -57,5 +57,18 @@ window.onload = function() {
                 return;
             }
         }
+
+        // 处理输入框
+        var inputElement = document.getElementById('input-form');
+        var keyPlaceholder = inputElement.getAttribute('data-lang-placeholder');
+        var keyDataError = inputElement.getAttribute('data-lang-data-error');
+
+        if (keyPlaceholder !== null && data[lang] && data[lang][keyPlaceholder]) {
+            inputElement.setAttribute('placeholder', data[lang][keyPlaceholder]);
+        }
+
+        if (keyDataError !== null && data[lang] && data[lang][keyDataError]) {
+            inputElement.setAttribute('data-error', data[lang][keyDataError]);
+        }
     }
 }
