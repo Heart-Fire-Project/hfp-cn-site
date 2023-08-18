@@ -40,7 +40,7 @@
     "content-statistics-????-num": "????",
     "content-statistics-hfp-translate-num": "翻译地图数量: 8张",
     "content-statistics-hfp-translate-num-percent": "所占百分比: 70%",
-    "content-statistics-hfp-original-num": "原创地图数量: 1张 ",
+    "content-statistics-hfp-original-num": "原创地图数量: 1张",
     "content-statistics-hfp-original-num-percent": "所占百分比: 70%",
     "content-statistics-hfp-rest-num": "摆烂成员数量: 11人",
     "content-statistics-hfp-rest-num-percent": "所占百分比: 100%",
@@ -63,7 +63,7 @@
     "content-announcement-description": "您可以在这里收到心火计划最新的公告, 以及最新活动通知, 请您关注心火计划官网以获得一手信息!",
     "content-partner-title": "我们的合作商",
     "content-partner-description": "和我们心火计划合作的会在这里展示, 需要合作的请联系 (admin@hfpro.top) !",
-    "content-partner-lianbi": "连壁计划"
+    "content-partner-lianbi": "联壁计划"
   },
   "en": {
     "title": "Heart Fire Project",
@@ -106,7 +106,7 @@
     "content-statistics-????-num": "????",
     "content-statistics-hfp-translate-num": "翻译地图数量: 8张",
     "content-statistics-hfp-translate-num-percent": "所占百分比: 70%",
-    "content-statistics-hfp-original-num": "原创地图数量: 1张 ",
+    "content-statistics-hfp-original-num": "原创地图数量: 1张",
     "content-statistics-hfp-original-num-percent": "所占百分比: 70%",
     "content-statistics-hfp-rest-num": "摆烂成员数量: 11人",
     "content-statistics-hfp-rest-num-percent": "所占百分比: 100%",
@@ -129,6 +129,6 @@
     "content-announcement-description": "您可以在这里收到心火计划最新的公告, 以及最新活动通知, 请您关注心火计划官网以获得一手信息!",
     "content-partner-title": "我们的合作商",
     "content-partner-description": "和我们心火计划合作的会在这里展示, 需要合作的请联系 (admin@hfpro.top) !",
-    "content-partner-lianbi": "连壁计划"
+    "content-partner-lianbi": "联壁计划"
   }
 }
