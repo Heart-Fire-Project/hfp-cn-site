@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- 这里是你的网站标题 -->
-    <title>心火计划</title>
+    <title data-lang-text="title">心火计划</title>
     <!-- CSS引入 -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" >
     <link rel="stylesheet" href="assets/fonts/line-icons.css">
@@ -35,44 +35,49 @@
       <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
         <div class="container">
           <!-- 网站头部LOGO -->
-          <a href="index.html" class="navbar-brand"><img style="width: 50px;height: 50px" src="assets/img/logo.png" alt=心火计划-翻译, 测试, 鉴赏"></a>
+          <a href="index.html" class="navbar-brand"><img style="width: 50px;height: 50px" src="assets/img/logo.png" alt=心火计划-翻译,测试,鉴赏"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <i class="lni-menu"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
+            <select id="lang-select">
+              <option value="en">English</option>
+              <option value="zh" selected>中文</option>
+            </select>
+          </div>
             <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
               <li class="nav-item active">
-                <a class="nav-link" href="#hero-area">
+                <a class="nav-link" href="#hero-area" data-lang-text="content-header-hfp-main-page">
                   主页
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#feature">
+                <a class="nav-link" href="#feature" data-lang-text="content-header-hfp-introduction">
                   计划介绍
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#team">
+                <a class="nav-link" href="#team" data-lang-text="content-header-hfp-admin-group">
                   管理组
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#portfolios">
+                <a class="nav-link" href="#portfolios" data-lang-text="content-header-hfp-works">
                   地图作品
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#testimonial">
+                <a class="nav-link" href="#testimonial" data-lang-text="content-header-hfp-player-comments">
                   玩家留言
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#blog">
+                <a class="nav-link" href="#blog" data-lang-text="content-header-hfp-news">
                   官方新闻
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">
+                <a class="nav-link" href="#contact" data-lang-text="content-header-hfp-partners">
                   合作网站
                 </a>
               </li>
@@ -88,9 +93,9 @@
             <div class="col-md-12 col-sm-12">
               <div class="contents text-center">
                 <!-- 标题内容修改 -->
-                <h2 class="head-title wow fadeInUp">欢迎您来到心火计划官方网站! <br></h2>
+                <h2 class="head-title wow fadeInUp" data-lang-text="content-welcome-hfp-welcome">欢迎您来到心火计划官方网站! <br></h2>
                 <div class="header-button wow fadeInUp" data-wow-delay="0.3s">
-                  <a href="#" class="btn btn-common">点击了解</a>
+                  <a href="#" class="btn btn-common" data-lang-text="content-welcome-hfp-details">点击了解</a>
                 </div>
               </div>
               <div class="img-thumb text-center wow fadeInUp" data-wow-delay="0.6s">
@@ -110,11 +115,12 @@
         <div class="row">
           <div class="col-lg-6 col-md-12 col-sm-12">
             <div class="text-wrapper">
-              <div>
-                <h2 class="title-hl wow fadeInLeft" data-wow-delay="0.3s">赶快加入我们吧! <br> 我在心火计划等候您的到来!</h2>
-                <p class="mb-4">赶快加入官方群!</p>
+              <div id="join-group">
+                <h2 class="title-hl wow fadeInLeft" data-wow-delay="0.3s" data-lang-text="content-introduce-main-hfp-joinus-1">赶快加入我们吧! </h2>
+                <h2 class="title-hl wow fadeInLeft" data-wow-delay="0.6s" data-lang-text="content-introduce-main-hfp-joinus-2">我在心火计划等候您的到来! </h2>
+                <p class="mb-4" data-lang-text="content-introduce-main-hfp-joingp">赶快加入官方群! </p>
                 <!-- 此处将“#”修改为你玩家QQ群的链接 -->
-                <a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=-eXSBAzPUPMkajYI1pr7xLSBmTWn7_8T&authKey=kI95tXJh8FOWQ7bX8j3y9rZmzHjomH69RdEkYpSc9nbIA1j9caE0uOTAQHVF4u%2FA&noverify=0&group_code=854256406" class="btn btn-common">加入QQ群</a>
+                <a href="https://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=-eXSBAzPUPMkajYI1pr7xLSBmTWn7_8T&authKey=kI95tXJh8FOWQ7bX8j3y9rZmzHjomH69RdEkYpSc9nbIA1j9caE0uOTAQHVF4u%2FA&noverify=0&group_code=854256406" class="btn btn-common" data-lang-text="content-introduce-main-hfp-joingp-url" data-lang-href="content-introduce-main-hfp-joinurl">加入QQ群</a>
               </div>
             </div>
           </div>
@@ -126,8 +132,8 @@
                   <i class="lni-microphone"></i>
                 </div>
                 <div class="feature-content">
-                  <h3>心火计划是什么</h3>
-                  <p>心火计划是一个由 Minecraft 玩家组成的热情社区. 我们的使命是通过翻译和共享, 让每一个 Minecraft 的世界都能被大多数的玩家所理解和享受. </p>
+                  <h3 data-lang-text="content-introduce-right-hfp-what-is-hfp">心火计划是什么</h3>
+                  <p data-lang-text="content-introduce-right-hfp-what-is-hfp-detail">心火计划是一个由 Minecraft 玩家组成的热情社区. 我们的使命是通过翻译和共享, 让每一个 Minecraft 的世界都能被大多数的玩家所理解和享受. </p>
                 </div>
               </div>
               <div class="feature-item wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="500ms">
@@ -135,8 +141,8 @@
                   <i class="lni-users"></i>
                 </div>
                 <div class="feature-content">
-                  <h3>跨越语言的障碍, 共享世界</h3>
-                  <p>我们的团队专注于翻译 Minecraft 地图, 我们都致力于让这些世界的故事和环境能被更多的玩家所理解, 让语言不再成为探索新世界的障碍. </p>
+                  <h3 data-lang-text="content-introduce-right-hfp-cross-lang-gap">跨越语言的障碍, 共享世界</h3>
+                  <p data-lang-text="content-introduce-right-hfp-cross-lang-gap-detail">我们的团队专注于翻译 Minecraft 地图, 我们都致力于让这些世界的故事和环境能被更多的玩家所理解, 让语言不再成为探索新世界的障碍. </p>
                 </div>
               </div>
               <div class="feature-item wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="700ms">
@@ -144,8 +150,8 @@
                   <i class="lni-medall-alt"></i>
                 </div>
                 <div class="feature-content">
-                  <h3>创造并分享优质的 Minecraft 体验</h3>
-                  <p>在心火计划中, 我们深信创新和创造力是推动我们前进的动力. 我们鼓励每一位成员将他们的想象力注入到 Minecraft 的世界中, 创造出独一无二的地图, 让每个玩家都能体验到不一样的冒险. </p>
+                  <h3 data-lang-text="content-introduce-right-hfp-create-excellent-experience">创造并分享优质的 Minecraft 体验</h3>
+                  <p data-lang-text="content-introduce-right-hfp-create-excellent-experience-detail">在心火计划中, 我们深信创新和创造力是推动我们前进的动力. 我们鼓励每一位成员将他们的想象力注入到 Minecraft 的世界中, 创造出独一无二的地图, 让每个玩家都能体验到不一样的冒险. </p>
                 </div>
               </div>
             </div>
@@ -159,7 +165,7 @@
     <section id="team" class="section-padding text-center">
       <div class="container">
         <h2 class="section-title wow fadeInDown"
-            data-wow-delay="0.3s">心火计划成员</h2>
+            data-wow-delay="0.3s" data-lang-text="content-admin-group-members">心火计划成员</h2>
         <div class="row">
           <div class="col-sm-6 col-md-6 col-lg-3">
             <div class="team-item text-center wow fadeInRight" data-wow-delay="0.3s">
@@ -173,9 +179,9 @@
               </div>
               <div class="info-text">
                 <!-- 管理组成员名称和介绍, 自行修改! -->
-                <h3><a href="#">思遥方</a></h3>
-                <p>计划主要创办人之一
-                  <br>被Roser喜欢压榨其他成员
+                <h3><a href="#" data-lang-text="content-admin-group-members-siyaofang">思遥方</a></h3>
+                <p data-lang-text="content-admin-group-members-siyaofang-1">计划主要创办人之一
+                  <br data-lang-text="content-admin-group-members-siyaofang-2">被Roser喜欢压榨其他成员
                 </p>
               </div>
             </div>
@@ -190,9 +196,9 @@
                 </div>
               </div>
               <div class="info-text">
-                <h3><a href="#">北遥</a></h3>
-                <p>计划主要创办人之一
-                  <br>猫猫猫猫猫猫猫
+                <h3><a href="#" data-lang-text="content-admin-group-members-beiyao">北遥</a></h3>
+                <p data-lang-text="content-admin-group-members-beiyao-1">计划主要创办人之一
+                  <br data-lang-text="content-admin-group-members-beiyao-2">猫猫猫猫猫猫猫
                 </p>
               </div>
             </div>
@@ -207,9 +213,9 @@
                 </div>
               </div>
               <div class="info-text">
-                <h3><a href="#">Roser</a></h3>
-                <p>计划主要数据包作者
-                  <br>自称被压榨成员
+                <h3><a href="#" data-lang-text="content-admin-group-members-roser">Roser</a></h3>
+                <p data-lang-text="content-admin-group-members-roser-1">计划主要数据包作者
+                  <br data-lang-text="content-admin-group-members-roser-2">自称被压榨成员
                 </p>
               </div>
             </div>
@@ -224,9 +230,9 @@
                 </div>
               </div>
               <div class="info-text">
-                <h3><a href="#">Heimnad</a></h3>
-                <p>心火计划最大闲人
-                  <br>啥都看看
+                <h3><a href="#" data-lang-text="content-admin-group-members-heimnad">Heimnad</a></h3>
+                <p data-lang-text="content-admin-group-members-heimnad-1">心火计划最大闲人
+                  <br data-lang-text="content-admin-group-members-heimnad-2">啥都看看
                 </p>
               </div>
             </div>
@@ -249,7 +255,7 @@
                     <!-- 统计的数量, 下面的同上 -->
                     <h3><span class="counter">11</span></h3>
                     <!-- 统计数量的名称, 下面的同上 -->
-                    <p>人员数量</p>
+                    <p data-lang-text="content-statistics-members-num">人员数量</p>
                   </div>
                 </div>
               </div>
@@ -258,7 +264,7 @@
                   <div class="icon-o"><i class="lni-emoji-smile"></i></div>
                   <div class="fact-count">
                     <h3><span class="counter">6599</span></h3>
-                    <p>浏览数量</p>
+                    <p data-lang-text="content-statistics-views-num">浏览数量</p>
                   </div>
                 </div>
               </div>
@@ -276,7 +282,7 @@
                   <div class="icon-o"><i class="lni-thumbs-up"></i></div>
                   <div class="fact-count">
                     <h3><span class="counter">？？？？</span></h3>
-                    <p>？？？？</p>
+                    <p data-lang-text="content-statistics-????-num">？？？？</p>
                   </div>
                 </div>
               </div>
@@ -305,20 +311,20 @@
             <div class="skills-section">
               <!-- 特权玩家统计 -->
               <div class="progress-box">
-                <h5>翻译地图数量: 8人 <span class="pull-right">所占百分比: 70%</span></h5>
+                <h5 data-lang-text="content-statistics-hfp-translate-num">翻译地图数量: 8张 <span class="pull-right" data-lang-text="content-statistics-hfp-translate-num-percent">所占百分比: 70%</span></h5>
                 <div class="progress" style="opacity: 1; left: 0;">
                   <!-- 修改上面百分比时, 请同步修改本行的width后的数字!下面的同上 -->
                   <div class="progress-bar" role="progressbar" data-width="20" style="width: 70%;"></div>
                 </div>
               </div>
               <div class="progress-box">
-                <h5>原创地图数量: 1张 <span class="pull-right">所占百分比: 5%</span></h5>
+                <h5 data-lang-text="content-statistics-hfp-original-num">原创地图数量: 1张 <span class="pull-right" data-lang-text="content-statistics-hfp-original-num-percent">所占百分比: 5%</span></h5>
                 <div class="progress" style="opacity: 1; left: 0;">
                   <div class="progress-bar" role="progressbar" data-width="30" style="width: 5%;"></div>
                 </div>
               </div>
               <div class="progress-box">
-                <h5>摆烂成员数量: 11人 <span class="pull-right">所占百分比: 100%</span></h5>
+                <h5 data-lang-text="content-statistics-hfp-rest-num">摆烂成员数量: 11人 <span class="pull-right" data-lang-text="content-statistics-hfp-rest-num-percent">所占百分比: 100%</span></h5>
                 <div class="progress" style="opacity: 1; left: 0;">
                   <div class="progress-bar" role="progressbar" data-width="40" style="width: 100%;"></div>
                 </div>
@@ -606,7 +612,7 @@
         <div class="row">
           <div class="col-lg-4 col-md-3 col-xs-12">
             <div class="footer-logo">
-              <img src="assets/img/logo.png" alt="">
+              <img src="assets/img/logo.png" style="width: 50px;height: 50px" alt="心火计划logo">
             </div>
           </div>
           <div class="col-lg-4 col-md-4 col-xs-12">     
@@ -634,6 +640,7 @@
       <div class="loader" id="loader-1"></div>
     </div>
     <!-- JavaScript引入 -->
+    <script src="assets/js/lang.js"></script>
     <script src="assets/js/jquery-min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
