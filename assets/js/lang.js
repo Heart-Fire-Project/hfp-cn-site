@@ -57,7 +57,6 @@ window.onload = function() {
                 return;
             }
         }
-
         // 处理所有的输入框和文本区域
         var inputElements = document.querySelectorAll('input[data-lang-placeholder], textarea[data-lang-placeholder]');
 
