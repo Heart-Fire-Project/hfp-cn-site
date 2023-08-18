@@ -57,18 +57,21 @@ window.onload = function() {
                 return;
             }
         }
+        // 处理所有的输入框和文本区域
+        var inputElements = document.querySelectorAll('input[data-lang-placeholder], textarea[data-lang-placeholder]');
 
-        // 处理输入框
-        var inputElement = document.getElementById('input-form');
-        var keyPlaceholder = inputElement.getAttribute('data-lang-placeholder');
-        var keyDataError = inputElement.getAttribute('data-lang-data-error');
+        for (var i = 0; i < inputElements.length; i++) {
+            var inputElement = inputElements[i];
+            var keyPlaceholder = inputElement.getAttribute('data-lang-placeholder');
+            var keyDataError = inputElement.getAttribute('data-lang-data-error');
 
-        if (keyPlaceholder !== null && data[lang] && data[lang][keyPlaceholder]) {
-            inputElement.setAttribute('placeholder', data[lang][keyPlaceholder]);
-        }
+            if (keyPlaceholder !== null && data[lang] && data[lang][keyPlaceholder]) {
+                inputElement.setAttribute('placeholder', data[lang][keyPlaceholder]);
+            }
 
-        if (keyDataError !== null && data[lang] && data[lang][keyDataError]) {
-            inputElement.setAttribute('data-error', data[lang][keyDataError]);
+            if (keyDataError !== null && data[lang] && data[lang][keyDataError]) {
+                inputElement.setAttribute('data-error', data[lang][keyDataError]);
+            }
         }
     }
 }
