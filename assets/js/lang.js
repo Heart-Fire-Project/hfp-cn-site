@@ -73,5 +73,20 @@ window.onload = function() {
                 inputElement.setAttribute('data-error', data[lang][keyDataError]);
             }
         }
+
+        // 处理所有的svg
+        var svgElements = document.querySelectorAll('[data-lang-svg]');
+
+        for (var i = 0; i < svgElements.length; i++) {
+            var svgElement = svgElements[i];
+            var key = svgElement.getAttribute('data-lang-svg');
+
+            if (data[lang] && data[lang][key]) {
+                svgElement.innerHTML = data[lang][key];
+            } else {
+                alert('SVG 不匹配: ' + key);
+                return;
+            }
+        }
     }
 }
